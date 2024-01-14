@@ -1,0 +1,38 @@
+body {
+  .ck .emotion {
+    width: 60px;
+  }
+
+  .ck.ck-emotion-pagination__current {
+    background: #ccc;
+  }
+
+  .ck.ck-emotion-grid {
+    width: 390px;
+
+
+    & .ck-emotion-grid__tiles {
+      //display: grid;
+      white-space: normal;
+
+      &:after {
+        clear: both;
+      }
+
+      .ck--emotion-grid__tile {
+        padding: 3px;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      img {
+        width: 65px;
+        padding: 2px;
+
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
+  }
+}

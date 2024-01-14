@@ -1,0 +1,16 @@
+blockquote.quote {
+  background: #eee;
+  padding: 10px 15px;
+  padding-bottom: 5px;
+  border: 1px #cccccc solid;
+
+
+  &:before {
+    content: '引用:'
+  }
+
+  &.exists-quote:before {
+    content: "引用" attr(data-from) "的发言:";
+  }
+
+}
